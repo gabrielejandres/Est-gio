@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Atividades - N@melab</title>
+		
+		<meta charset="utf-8"/>
+		
+		<link rel="stylesheet" href="./css/index.css"/>
+		
+		<link rel="icon" href="./img/icon.png" />
+		
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css"/>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<script src="./JS/jquery.min.js"></script>
+		
+		<script>
+			var texto = "Novos Ambientes Educacionais";
+			var result;
+
+			var count = 0;
+			function digitar() {
+			  result = document.getElementById("result");
+			  window.setTimeout(function() { inserir(texto[count]) }, 200);
+			}
+
+			function inserir(letra) {
+			  result.innerHTML += letra;
+			  count++;
+			  if(count < texto.length)
+				window.setTimeout(function() { inserir(texto[count]) }, 200);
+			}
+
+			window.onload = digitar;
+		</script>
+	</head>
+	<body>
+		<header class="header">
+		<div class="menu">
+				<nav>
+					<ul>
+						<li><a href="index.html" >Página Inicial</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="atividades.html">Atividades</a></li>
+						<li class="caixinha"><a href="cadastrar.html">Cadastre-se</a></li>
+						<li class="caixinha"><a href="entrar.html">Entrar</a></li>		
+					</ul>
+				</nav>
+			</div>
+			<div class="header-logo">
+				<img class="logo-index" src="./img/fundo.png" alt="logo">
+				<div id="result">	</div>
+			</div>
+			<div class="clearfix"></div>
+		</header>
+		<main>	
+		<div class="principalA">
+		<!--<div class="img">
+			 <img src="./img/ladinho.jpg" alt="Física">
+		</div>-->
+		<div class="div1">
+				<div class="atividades">
+
+				   	<p>Descrição da atividade</p>
+				    <img class="atividade" src="./img/p33.jpg" alt="Física">
+
+					<p>Descrição da atividade</p>
+			        <img class="atividade" src="./img/p1.jpg" alt="Física">
+
+			        <p>Descrição da atividade</p>
+			        <img class="atividade" src="./img/p2.jpg" alt="Física">
+			     
+			     	<p>Descrição da atividade</p>
+				    <img class="atividade" src="./img/p4.jpg" alt="Física">
+			
+					<p>Descrição da atividade</p>
+				   <img class="atividade" src="./img/p5.jpg" alt="Física">
+
+	
+				</div>
+		</div>
+
+	<footer class="footer2">
+			<div class="autoriaindex">
+				<p> © Copyright Todos os direitos reservados</p>
+				<p>Design by Ana Clara Faria & Gabriele Jandres</p>
+			</div>
+			<div class="social">
+			<a href="https://www.facebook.com/namelabcefet/"><img src="./img/face.png"/></a>
+			</div>
+		</footer>
+		</main>	
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Sobre - N@melab</title>
+		
+		<meta charset="utf-8"/>
+		
+		<link rel="stylesheet" href="./css/index.css"/>
+		
+		<link rel="icon" href="./img/icon.png" />
+		
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css"/>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<script src="./JS/jquery.min.js"></script>
+
+		<script>
+			var texto = "Novos Ambientes Educacionais";
+			var result;
+
+			var count = 0;
+			function digitar() {
+			  result = document.getElementById("result");
+			  window.setTimeout(function() { inserir(texto[count]) }, 200);
+			}
+
+			function inserir(letra) {
+			  result.innerHTML += letra;
+			  count++;
+			  if(count < texto.length)
+				window.setTimeout(function() { inserir(texto[count]) }, 200);
+			}
+
+			window.onload = digitar;
+		</script>
+	</head>
+	<body>
+		<header class="header">
+		<div class="menu">
+				<nav>
+					<ul>
+						<li><a href="index.html" >Página Inicial</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="atividades.html">Atividades</a></li>
+						<li class="caixinha"><a href="cadastrar.html">Cadastre-se</a></li>
+						<li class="caixinha"><a href="entrar.html">Entrar</a></li>		
+					</ul>
+				</nav>
+			</div>
+			<div class="header-logo">
+				<img class="logo-index" src="./img/fundo.png" alt="logo">
+				<div id="result">	</div>
+			</div>
+			<div class="clearfix"></div>
+		</header>
+		<main>	
+		<div class="principal">
+		<div class="div1">
+				<div class="centralizar">
+					<div id="ana">
+						<img src="./img/ana.jpg" alt="Física" class="icone"/>
+						<p class="descricao">Ana Clara Machado de Faria, aluna do ensino médio no CEFET/RJ Uned Nova Friburgo, técnica em informática e estagiária no Projeto Namelab.</p>
+					</div>
+					<div id="gabi">
+						 <img src="./img/gabi.jpg" alt="Física" class="icone"/>
+						 <p class="descricao">Gabriele Jandres Cavalcanti, aluna do ensino médio no CEFET/RJ Uned Nova Friburgo, técnica em informática e estagiária no Projeto Namelab.</p>
+					 </div>
+					 <div id="gustavo">
+						 <img src="./img/gustavo.jpg" alt="Física" class="icone"/>
+						 <p class="descricao">Gustavo Antonio Montenegro Guttmann possui graduação em Licenciatura em Física pela Universidade Federal do Rio de Janeiro (2005) e mestrado em Ensino de Ciências e Matemática pelo Centro Federal de Educação Tecnológica Celso Suckow da Fonseca (2011). </p>
+					 </div>
+				 </div>
+
+				 <div class="contatos">
+					<label class="cal_title">Contato</label>
+					<p>namelab2018@gmail.com</p>
+					<p>www.cefet-rj.br/nova-friburgo</p>
+				</div>
+		</div>
+
+	<footer class="footer2">
+			<div class="autoriaindex">
+				<p> © Copyright Todos os direitos reservados</p>
+				<p>Design by Ana Clara Faria & Gabriele Jandres</p>
+			</div>
+			<div class="social">
+			<a href="https://www.facebook.com/namelabcefet/"><img src="./img/face.png"/></a>
+			</div>
+		</footer>
+		</main>	
+	</body>
+</html>
